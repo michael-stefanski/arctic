@@ -3,7 +3,7 @@ import logging
 import numpy as np
 import pymongo
 from pandas import DataFrame
-from pandas.util.testing import assert_frame_equal
+from pandas.testing import assert_frame_equal
 
 from ._config import FW_POINTERS_CONFIG_KEY, FwPointersCfg
 
