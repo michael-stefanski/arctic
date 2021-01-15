@@ -115,7 +115,7 @@ class Cache:
 
     def delete_item_from_key(self, key, item):
         try:
-            self._cachecol.update(
+            self._cachecol.update_one(
                 {'type': key},
                 {"$pull": {"data": item}}
             )
